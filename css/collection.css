@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    outline: none;
+}
+:root{
+    --bg-color:#ffffff;
+    --text-color: #111111;
+    --main-color: #c8815f;
+    --big-font: 4.5rem;
+    --h2-font: 3.3rem;
+    --h3-font: 2rem;
+    --normal-font: 1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 14%;
+    transition: all .35 ease;
+}
+
+header.sticky{
+    background: var(--bg-color);
+    padding: 14px 14%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0 / 10%);
+}
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 10px 25px;
+    font-size: var(--normal-font);
+    transition: all .36s ease;
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+.header-icons i{
+    font-size: 32px;
+    color: var(--text-color);
+    margin-right: 20px;
+    transition: all .36 ease;
+}
+.header-icons i:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 34px;
+    color: var(--text-color);
+    z-index:10001;
+    margin-right: 20px;
+    display: none;
+}
+
+/* SECTION */
+section{
+    padding: 100px 8%;
+}
+
+.collection{
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: start;
+}
+
+/* DASHBOARD */
+.dashboard-box{
+    background-color: gray;
+    min-height: 50vh;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* SEARCH MAIN BOX */
+.search-main-box{
+    /* background-color: gray; */
+    width: 100%;
+    min-height: 8vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* ITEM CHOICE */
+.item-choice{
+    display: flex;
+    width: 75%;
+    justify-content: start;
+    align-items: center;
+}
+.item-choice a{
+    color: var(--text-color);
+    font-weight: 700;
+    padding: 5px 25px;
+    font-size: var(--normal-font);
+    transition: all .36s ease-in-out;   
+    margin: 2px;
+}
+.item-choice a:hover{
+    color: var(--main-color);
+}
+
+/* SEARCH BOX */
+.search-box{
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+.search-box .search-input-box{
+    background-color: white;
+    padding: 5px;
+    width: 85%;
+    height: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid rgb(80, 80, 80);
+}
+.search-input-box input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: var(--normal-font);
+    font-weight: 500;
+    border: none;
+}
+.search-box button{
+    width: 15%;
+    height: 40px;
+    font-size: 23px;
+    font-weight: 600;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    background-color: #c2c2c2;
+    border: 1px solid rgb(80, 80, 80);
+}
+
+/* ITEM LIST */
+.itemlist-main-box{
+    background-color: gray;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 15px;
+}
+.itemlist-main-box .bed-main-box{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    justify-content: start;
+}
+
+.itemlist-main-box .item-bed-box{
+    background-color: var(--bg-color);
+    padding: 10px;
+    width: 250px;
+    height: 380px;
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+
+.item-bed-box .bed-image-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background-color: gray;
+    border-radius: 10px;
+}
